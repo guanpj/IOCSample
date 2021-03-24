@@ -9,11 +9,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*goToRepositoryActivity.setOnClickListener {
-            startRepositoryActivity("Kotlin", "JetBrains", url = "https://github.com/jetbrains/kotlin")
+        goToRepositoryActivity.setOnClickListener {
+            RepositoryActivityBuilder.start(this, "Kotlin", "JetBrains", 111, "https://github.com/jetbrains/kotlin")
         }
         goToUserActivity.setOnClickListener {
-            UserActivityBuilder.start(this, 30, "bennyhuo", "Kotliner", "打杂的", "北京")
-        }*/
+            UserActivityBuilder.start(this, 30, "guanpj", "Kotliner", "打杂的", "北京")
+        }
     }
 }
